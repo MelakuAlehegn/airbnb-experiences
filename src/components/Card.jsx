@@ -10,9 +10,9 @@ function Card(props) {
   return (
         <div className="cards">
         {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img className="card-images" src={`../public/assets/${props.item.coverImg}`}  />
+            <img className="card-images" src={`src/assets/${props.item.coverImg}`}  />
             <div className="card-stat">
-                <img src="public/assets/Star 1.png" className="star"/>
+                <img src="src/assets/Star 1.png" className="star"/>
                 <span>{props.item.stats.rating}</span>
                 <span className="gray">({props.item.stats.reviewCount}) • </span>
                 <span className="gray">{props.item.location}</span>
